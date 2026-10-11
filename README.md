@@ -1,49 +1,57 @@
 # Quiz App
 
-A full-stack quiz application with frontend and backend components. Users can take a 10-question quiz and view their scores at the end.
+A full-stack quiz application built with Node.js + Express backend and React frontend.
 
 ## Features
-- 10 multiple-choice questions
-- Real-time score calculation
-- Results display with marks
-- Fully responsive UI
-- RESTful API backend
+- 10 questions
+- Multiple-choice quiz
+- Score calculation at the end
+- Marks shown on final result page
+- Runs locally on localhost
 
-## Project Structure
-```
+## Project structure
+```text
 quiz/
-├── backend/          # Node.js/Express backend
-├── frontend/         # React frontend
+├── backend/
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   ├── package.json
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.js
+│       ├── index.js
+│       └── styles.css
+├── .gitignore
 └── README.md
 ```
 
-## Quick Start
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Backend Setup
+## Backend setup
 ```bash
 cd backend
 npm install
 npm start
 ```
-Backend runs on `http://localhost:5000`
+The backend runs on: http://localhost:5000
 
-### Frontend Setup
+## Frontend setup
 ```bash
 cd frontend
 npm install
 npm start
 ```
-Frontend runs on `http://localhost:3000`
+The frontend runs on: http://localhost:3000
 
-## API Endpoints
-- `GET /api/quiz` - Get all questions
-- `POST /api/submit` - Submit quiz answers and get score
+## API endpoints
+- GET /api/quiz
+- POST /api/submit
 
-## Quiz Structure
-- Total Questions: 10
-- Question Type: Multiple Choice
-- Scoring: Marks displayed at the end
+## Result display
+The final screen shows:
+- Total marks
+- Percentage
+- Total questions attempted
+
+## Notes
+Make sure the backend is running before opening the frontend app.
